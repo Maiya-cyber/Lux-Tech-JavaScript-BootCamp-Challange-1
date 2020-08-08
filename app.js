@@ -9,8 +9,10 @@ const modal = document.querySelector(".modal");
 const openBtn = document.getElementById("btn-open");
 const closeButton = document.querySelector(".close-button");
 
+openBtn.onclick = function(){
+    modal.style.display = "block";
+}
 
-openBtn.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
